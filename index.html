@@ -7,6 +7,8 @@
   <meta name="description" content="" />
   <link rel="stylesheet" type="text/css" href="style.css" />
   <!-- <link rel="icon" href="favicon.png"> --> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
   
@@ -14,36 +16,36 @@
     <div class="movie-container">
       <h2 id="movie-title" class="hidden"></h2>
     </div>
-    <button id="btn-generar">Generar pelicula</button>
+    <button id="btn-generar">Generar Película</button>
     <button id="btn-agregar">Ver lista completa</button>
   </section>
   <section class="second-section">
-    <div class="table-container">
-      <table class="movie-table">
-        <thead>
-          <tr>
-            <th>Nombre de la película</th>
-            <th>Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Interestelar</td>
-            <td><button class="btn-eliminar">Eliminar</button></td>
-          </tr>
-          <tr>
-            <td>Pulp Fiction</td>
-            <td><button class="btn-eliminar">Eliminar</button></td>
-          </tr>
-          <tr>
-            <td>El Padrino</td>
-            <td><button class="btn-eliminar">Eliminar</button></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
+
   
+  <div class="container">
+    <h1>Lista de películas</h1>
+    
+    <div class="add-movie">
+        <input type="text" id="new-movie" placeholder="Ingresa el título de una película">
+        <button class="btn-add" id="add-movie-btn">Agregar</button>
+    </div>
+    
+    <table class="movies-table">
+        <thead>
+            <tr>
+                <th>Película</th>
+                <th class="action-cell">Acción</th>
+            </tr>
+        </thead>
+        <tbody id="movies-list">
+            <!-- Las películas se agregarán aquí dinámicamente -->
+            <tr class="no-movies-row">
+                <td colspan="2" class="no-movies">No hay películas agregadas</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</section>
   <script src="app.js"></script>
 </body>
 </html>
