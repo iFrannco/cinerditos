@@ -1,0 +1,13 @@
+body {
+    margin: 0px;
+}
+
+.first-section{
+    background-color: blueviolet;
+    height:100vh;
+}
+
+.second-section{
+    background-color: aquamarine;
+    height:100vh;
+}
