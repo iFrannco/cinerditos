@@ -11,9 +11,37 @@
 <body>
   
   <section class="first-section">
+    <div class="movie-container">
+      <h2 id="movie-title" class="hidden"></h2>
+    </div>
     <button id="btn-generar">Generar pelicula</button>
+    <button id="btn-agregar">Ver lista completa</button>
   </section>
   <section class="second-section">
+    <div class="table-container">
+      <table class="movie-table">
+        <thead>
+          <tr>
+            <th>Nombre de la película</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Interestelar</td>
+            <td><button class="btn-eliminar">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>Pulp Fiction</td>
+            <td><button class="btn-eliminar">Eliminar</button></td>
+          </tr>
+          <tr>
+            <td>El Padrino</td>
+            <td><button class="btn-eliminar">Eliminar</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
   
   <script src="app.js"></script>

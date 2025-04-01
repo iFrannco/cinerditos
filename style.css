@@ -2,12 +2,129 @@ body {
     margin: 0px;
 }
 
-.first-section{
+.first-section {
     background-color: blueviolet;
-    height:100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.second-section{
-    background-color: aquamarine;
-    height:100vh;
+.movie-container {
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movie-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#movie-title.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#btn-generar {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: white;
+    color: blueviolet;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#btn-agregar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn-generar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn-agregar:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.second-section {
+    height: 100vh;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.table-container {
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.movie-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.movie-table th {
+    background-color: blueviolet;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.movie-table th:first-child {
+    width: 70%;
+}
+
+.movie-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.movie-table tr:last-child td {
+    border-bottom: none;
+}
+
+.movie-table tbody tr:hover {
+    background-color: #f9f5ff;
+}
+
+.btn-eliminar {
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #ff3860;
+    border: 1px solid #ff3860;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #ff3860;
+    color: white;
 }
